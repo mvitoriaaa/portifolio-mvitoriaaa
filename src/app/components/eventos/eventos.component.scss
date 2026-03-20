@@ -1,0 +1,40 @@
+section { background: var(--bg); }
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 28px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: var(--accent);
+    transform: translateX(8px);
+  }
+}
+
+.event-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.event-name { font-size: 16px; font-weight: 600; flex: 1; }
+
+.event-type {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
