@@ -10,6 +10,14 @@
   gap: 24px;
 }
 
+.edu-logo {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  filter: brightness(1.1);
+}
+
 .edu-card {
   padding: 32px;
   border: 1px solid var(--border);

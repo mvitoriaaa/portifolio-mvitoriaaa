@@ -15,7 +15,7 @@ import { RevealDirective } from '../../directives/reveal.directive';
       </div>
       <div class="education-grid">
         <div class="edu-card" appReveal *ngFor="let edu of formacoes">
-          <div class="edu-icon" [innerHTML]="edu.svg"></div>
+          <img class="edu-logo" [src]="edu.logo" [alt]="edu.institution">
           <div class="edu-badge" [class.done]="edu.done">
             {{ edu.done ? 'Concluído' : 'Em andamento' }}
           </div>
@@ -31,30 +31,20 @@ import { RevealDirective } from '../../directives/reveal.directive';
   styleUrl: './formacao.component.scss',
 })
 export class FormacaoComponent {
-  formacoes = [
-    {
-      done: false,
-      degree: 'Ciências da Computação',
-      institution: 'Fametro — Manaus, AM',
-      period: '5° Período · 2022 – presente',
-      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <polygon points="12 2 22 8.5 12 15 2 8.5 12 2"/>
-        <path d="M7 11.5V17c0 0 2 2 5 2s5-2 5-2v-5.5"/>
-        <line x1="22" y1="8.5" x2="22" y2="14"/>
-        <circle cx="22" cy="14.5" r="0.8" fill="currentColor" stroke="none"/>
-      </svg>`,
-    },
-    {
-      done: true,
-      degree: 'Técnico em Informática',
-      institution: 'Escola Técnica',
-      period: 'Curso técnico completo',
-      svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="2" y="3" width="20" height="13" rx="2"/>
-        <path d="M8 21h8"/><path d="M12 17v4"/>
-        <polyline points="9.5 10.5 12 8 14.5 10.5"/>
-        <line x1="12" y1="8" x2="12" y2="14"/>
-      </svg>`,
-    },
-  ];
+    formacoes = [
+  {
+    done: false,
+    degree: 'Ciências da Computação',
+    institution: 'Fametro — Manaus, AM',
+    period: '5° Período · 2022 – presente',
+    logo: 'assets/Logo600-removebg-preview.png',
+  },
+  {
+    done: true,
+    degree: 'Técnico em Informática',
+    institution: 'Cetam',
+    period: 'Curso técnico completo',
+    logo: 'assets/cetam_gov_am_2023_colorido-removebg-preview.png',
+  },
+];
 }
