@@ -14,8 +14,8 @@ import { RevealDirective } from '../../directives/reveal.directive';
         </p>
         <div class="contact-links">
           <a href="mailto:seuemail@email.com" class="contact-link">✉ Email</a>
-          <a href="https://linkedin.com/in/seuperfil" target="_blank" class="contact-link">in LinkedIn</a>
-          <a href="https://github.com/seuperfil" target="_blank" class="contact-link">⌥ GitHub</a>
+          <a href="https://www.linkedin.com/in/maria-aparecida-aa68a4243/" target="_blank" class="contact-link">in LinkedIn</a>
+          <a href="https://github.com/Arkill" target="_blank" class="contact-link">⌥ GitHub</a>
         </div>
       </div>
     </section>
