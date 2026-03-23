@@ -52,10 +52,10 @@
 }
 
 .hero-name {
-  font-size: clamp(32px, 6vw, 96px);
+  font-size: clamp(28px, 5vw, 96px);
   font-weight: 800;
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   margin-bottom: 16px;
   opacity: 0;
   animation: fadeUp 0.8s 0.4s forwards;
@@ -63,6 +63,7 @@
   span {
     color: var(--accent);
     display: block;
+    word-break: break-word;
   }
 }
 
@@ -141,4 +142,18 @@
 @media (max-width: 900px) {
   .hero { padding: 100px 24px 60px; }
   .hero-stats { display: none; }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 20px 60px;
+  }
+
+  .hero-name {
+    font-size: 36px;
+  }
+
+  .hero-role {
+    font-size: 13px;
+  }
 }
