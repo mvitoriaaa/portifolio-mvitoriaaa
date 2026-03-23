@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
         <div class="hero-tag">desenvolvedora full-stack</div>
         <h1 class="hero-name">
           Olá, sou
-          <span>Maria Aparecida.</span>
+          <span>Maria Aparecida</span>
         </h1>
         <p class="hero-role">
           Ciências da Computação · <span class="highlight">Infraestrutura & Monitoramento</span> · Web Dev

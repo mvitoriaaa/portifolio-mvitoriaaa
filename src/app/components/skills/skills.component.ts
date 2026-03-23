@@ -10,7 +10,7 @@ import { RevealDirective } from '../../directives/reveal.directive';
     <section id="skills">
       <div class="section-header" appReveal>
         <span class="section-num">02</span>
-        <h2 class="section-title">Stack & Skills</h2>
+        <h2 class="section-title">Stack & Skills </h2>
         <div class="section-line"></div>
       </div>
       <div class="skills-categories">

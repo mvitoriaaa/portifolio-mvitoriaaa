@@ -15,7 +15,9 @@ import { RevealDirective } from '../../directives/reveal.directive';
       </div>
       <div class="education-grid">
         <div class="edu-card" appReveal *ngFor="let edu of formacoes">
+          <div class="edu-logo-wrapper">
           <img class="edu-logo" [src]="edu.logo" [alt]="edu.institution">
+          </div>
           <div class="edu-badge" [class.done]="edu.done">
             {{ edu.done ? 'Concluído' : 'Em andamento' }}
           </div>
