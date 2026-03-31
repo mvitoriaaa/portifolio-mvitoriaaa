@@ -42,7 +42,7 @@ export class ExperienciaComponent {
   experiencias: Experiencia[] = [
     {
       date: 'atual',
-      role: 'Analista de TI & Monitoramento',
+      role: 'Estagiaria de TI & Monitoramento',
       company: 'DigiBoard',
       desc: 'Gerenciamento e monitoramento de infraestrutura de TI utilizando Zabbix e Grafana. Desenvolvimento de dashboards de monitoramento de energia — medição de consumo e eficiência de servidores.',
       tags: ['Zabbix', 'Grafana', 'Monitoramento', 'Infraestrutura', 'Gestão de Energia'],
