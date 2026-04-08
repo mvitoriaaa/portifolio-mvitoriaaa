@@ -5,6 +5,10 @@
   padding: 120px 60px 80px;
   position: relative;
   overflow: hidden;
+  --grid-offset-x: 0px;
+  --grid-offset-y: 0px;
+  --glow-x: 80%;
+  --glow-y: 50%;
 }
 
 .hero-bg {
@@ -13,16 +17,40 @@
   background:
     radial-gradient(ellipse 60% 60% at 80% 50%, rgba(0,229,195,0.06) 0%, transparent 70%),
     radial-gradient(ellipse 40% 40% at 20% 80%, rgba(255,107,53,0.05) 0%, transparent 60%);
+  transition: background 0.18s ease-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at var(--glow-x) var(--glow-y),
+      rgba(0,229,195,0.12) 0%,
+      rgba(0,229,195,0.03) 18%,
+      transparent 42%
+    );
+    opacity: 0.9;
+    transition: background-position 0.18s ease-out;
+    pointer-events: none;
+  }
 }
 
 .hero-grid {
   position: absolute;
-  inset: 0;
+  inset: -80px;
   background-image:
     linear-gradient(var(--border) 1px, transparent 1px),
     linear-gradient(90deg, var(--border) 1px, transparent 1px);
   background-size: 60px 60px;
+  background-position: var(--grid-offset-x) var(--grid-offset-y);
   mask-image: radial-gradient(ellipse 80% 80% at 80% 50%, black 0%, transparent 70%);
+  opacity: 0.9;
+  transition:
+    background-position 0.18s ease-out,
+    transform 0.18s ease-out;
+  transform: translate3d(calc(var(--grid-offset-x) * -0.35), calc(var(--grid-offset-y) * -0.35), 0);
+  will-change: background-position, transform;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -142,6 +170,10 @@
 @media (max-width: 900px) {
   .hero { padding: 100px 24px 60px; }
   .hero-stats { display: none; }
+  .hero-grid {
+    inset: 0;
+    transform: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -155,5 +187,9 @@
 
   .hero-role {
     font-size: 13px;
+  }
+
+  .hero-bg::after {
+    opacity: 0.45;
   }
 }

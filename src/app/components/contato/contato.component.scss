@@ -52,3 +52,10 @@ section {
     background: rgba(0,229,195,0.05);
   }
 }
+
+.contact-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  fill: currentColor;
+}

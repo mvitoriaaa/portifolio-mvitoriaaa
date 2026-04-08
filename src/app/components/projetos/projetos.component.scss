@@ -11,6 +11,9 @@
   position: relative;
   overflow: hidden;
   transition: all 0.4s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 
   &::after {
     content: '';
@@ -19,6 +22,7 @@
     background: linear-gradient(135deg, rgba(0,229,195,0.05), transparent);
     opacity: 0;
     transition: opacity 0.4s;
+    pointer-events: none;
   }
 
   &:hover {
@@ -28,6 +32,10 @@
     &::after { opacity: 1; }
     .project-link { gap: 16px; }
   }
+}
+
+.project-card--disabled {
+  cursor: default;
 }
 
 .project-num {
@@ -69,4 +77,10 @@
   align-items: center;
   gap: 8px;
   transition: gap 0.3s;
+}
+
+.project-link-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
