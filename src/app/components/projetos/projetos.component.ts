@@ -31,11 +31,11 @@ import { RevealDirective } from '../../directives/reveal.directive';
 export class ProjetosComponent {
   projetos = [
     {
-      num: '001 — Freelancer · Sagatti',
-      title: 'Sistema de Gerenciamento de Veículos',
-      desc: 'Sistema completo para controle de frota: cadastro de veículos, histórico de manutenções, relatórios gerenciais e controle de motoristas. LINK EM BREVE',
-      tags: ['JavaScript', 'MySQL', 'HTML/CSS', 'Bootstrap'],
-      link: '#',
+      num: '001 — Freelancer · Amazonas Refrilar',
+      title: 'Plataforma completa de gerenciamento para a Amazonas Refrilar',
+      desc: 'Angular Frontend Aplicação web construída com o framework Angular para o setor de refrigeração.',
+      tags: ['Typescript', 'SQLite', 'HTML/SCSS', 'Bootstrap','Angular'],
+      link: 'portifolio-arkill.vercel.app',
     },
     {
       num: '002 — DigiBoard',
@@ -50,6 +50,14 @@ export class ProjetosComponent {
       desc: 'Projetos acadêmicos ao longo dos 5 períodos: estruturas de dados, algoritmos, banco de dados e desenvolvimento web.  LINK EM BREVE',
       tags: ['C/C++', 'Java', 'Python', 'SQL Server'],
       link: '#',
+    },
+
+    {
+      num: '004 — Projeto de reconhecimento de gestos',
+      title: 'Projeto de visão computacional para reconhecimento de gestos',
+      desc: 'Este projeto usa webcam + OpenCV + MediaPipe para reconhecer gestos com a mao em tempo real.  LINK EM BREVE',
+      tags: ['C/C++', 'Java', 'Python', 'SQL Server'],
+      link: 'https://github.com/mvitoriaaa/Projeto_mapeamento_gesto',
     },
   ];
 }
