@@ -62,7 +62,7 @@ export class ProjetosComponent {
       title: 'Plataforma completa de gerenciamento para a Amazonas Refrilar',
       desc: 'Aplicacao web em Angular para o setor de refrigeracao.',
       tags: ['Typescript', 'SQLite', 'HTML/SCSS', 'Bootstrap', 'Angular'],
-      link: 'https://portifolio-arkill.vercel.app',
+      link: 'https://amazonasrefrilar.vercel.app',
     },
     {
       num: '002 - DigiBoard',
